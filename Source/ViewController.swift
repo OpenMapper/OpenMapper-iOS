@@ -22,8 +22,8 @@ class ViewController: UIViewController{
   override func viewDidLoad() {
     super.viewDidLoad()
     previewView = UIView(frame: CGRect(x: 0, y: 0,
-                                       width: UIScreen.main.bounds.size.width,
-                                       height: UIScreen.main.bounds.size.height))
+                                       width: UIScreen.main.bounds.size.width/2,
+                                       height: UIScreen.main.bounds.size.height/2))
     previewView.contentMode = UIViewContentMode.scaleAspectFit
     view.addSubview(previewView)
     
