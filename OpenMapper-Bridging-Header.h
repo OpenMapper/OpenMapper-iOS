@@ -3,4 +3,4 @@
 //
 
 #import "test.h"
-#import <OpenMapper/open_mapper.h>
+#import <OpenMapperLib/openmapper.h>

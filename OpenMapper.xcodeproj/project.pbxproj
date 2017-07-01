@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2916D4FC1EFFC4AB00E05399 /* OpenMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2916D4FB1EFFC4AB00E05399 /* OpenMapper.framework */; };
-		2916D4FE1EFFC4B900E05399 /* OpenMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2916D4FB1EFFC4AB00E05399 /* OpenMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2916D5071EFFC75600E05399 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 2916D5061EFFC75600E05399 /* test.m */; };
 		298CECEC1EEDD66700C5542F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298CECEA1EEDD66700C5542F /* AppDelegate.swift */; };
 		298CECED1EEDD66700C5542F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298CECEB1EEDD66700C5542F /* ViewController.swift */; };
 		298CECF61EEDD7A900C5542F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298CECEF1EEDD7A900C5542F /* Assets.xcassets */; };
 		298CECF71EEDD7A900C5542F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 298CECF11EEDD7A900C5542F /* LaunchScreen.storyboard */; };
 		298CECF81EEDD7A900C5542F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 298CECF31EEDD7A900C5542F /* Main.storyboard */; };
+		370D138D1F080B200022ADBF /* OpenMapperLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370D138C1F080B200022ADBF /* OpenMapperLib.framework */; };
+		370D138E1F080B200022ADBF /* OpenMapperLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 370D138C1F080B200022ADBF /* OpenMapperLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2916D4FE1EFFC4B900E05399 /* OpenMapper.framework in Embed Frameworks */,
+				370D138E1F080B200022ADBF /* OpenMapperLib.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,7 +33,6 @@
 
 /* Begin PBXFileReference section */
 		290520E61EEDC57E00A4320F /* OpenMapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenMapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2916D4FB1EFFC4AB00E05399 /* OpenMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenMapper.framework; path = ../OpenMapper/lib/OpenMapper.framework; sourceTree = "<group>"; };
 		2916D5041EFFC75600E05399 /* OpenMapper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenMapper-Bridging-Header.h"; sourceTree = "<group>"; };
 		2916D5051EFFC75600E05399 /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = test.h; path = Resources/test.h; sourceTree = "<group>"; };
 		2916D5061EFFC75600E05399 /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = test.m; path = Resources/test.m; sourceTree = "<group>"; };
@@ -43,6 +42,7 @@
 		298CECF21EEDD7A900C5542F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		298CECF41EEDD7A900C5542F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		298CECF51EEDD7A900C5542F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		370D138C1F080B200022ADBF /* OpenMapperLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OpenMapperLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2916D4FC1EFFC4AB00E05399 /* OpenMapper.framework in Frameworks */,
+				370D138D1F080B200022ADBF /* OpenMapperLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +60,7 @@
 		290520DD1EEDC57E00A4320F = {
 			isa = PBXGroup;
 			children = (
+				370D138C1F080B200022ADBF /* OpenMapperLib.framework */,
 				2916D5051EFFC75600E05399 /* test.h */,
 				2916D5061EFFC75600E05399 /* test.m */,
 				2916D4FA1EFFC49700E05399 /* Frameworks */,
@@ -81,7 +82,6 @@
 		2916D4FA1EFFC49700E05399 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2916D4FB1EFFC4AB00E05399 /* OpenMapper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
