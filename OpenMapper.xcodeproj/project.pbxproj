@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2916D5071EFFC75600E05399 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 2916D5061EFFC75600E05399 /* test.m */; };
+		2972D0B21F0C2ED1000AC882 /* ORBvoc.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2972D0B01F0C2ED1000AC882 /* ORBvoc.txt */; };
+		2972D0B31F0C2ED1000AC882 /* iphone.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 2972D0B11F0C2ED1000AC882 /* iphone.yaml */; };
 		298CECEC1EEDD66700C5542F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298CECEA1EEDD66700C5542F /* AppDelegate.swift */; };
 		298CECED1EEDD66700C5542F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298CECEB1EEDD66700C5542F /* ViewController.swift */; };
 		298CECF61EEDD7A900C5542F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298CECEF1EEDD7A900C5542F /* Assets.xcassets */; };
@@ -36,13 +38,15 @@
 		2916D5041EFFC75600E05399 /* OpenMapper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenMapper-Bridging-Header.h"; sourceTree = "<group>"; };
 		2916D5051EFFC75600E05399 /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = test.h; path = Resources/test.h; sourceTree = "<group>"; };
 		2916D5061EFFC75600E05399 /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = test.m; path = Resources/test.m; sourceTree = "<group>"; };
+		2972D0B01F0C2ED1000AC882 /* ORBvoc.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ORBvoc.txt; path = ../OpenMapper/thirdparty/slam_engine/ORB_SLAM2/Vocabulary/ORBvoc.txt; sourceTree = "<group>"; };
+		2972D0B11F0C2ED1000AC882 /* iphone.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = iphone.yaml; path = ../OpenMapper/thirdparty/slam_engine/ORB_SLAM2/Vocabulary/iphone.yaml; sourceTree = "<group>"; };
 		298CECEA1EEDD66700C5542F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Source/AppDelegate.swift; sourceTree = "<group>"; };
 		298CECEB1EEDD66700C5542F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Source/ViewController.swift; sourceTree = "<group>"; };
 		298CECEF1EEDD7A900C5542F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
 		298CECF21EEDD7A900C5542F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		298CECF41EEDD7A900C5542F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		298CECF51EEDD7A900C5542F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
-		370D138C1F080B200022ADBF /* OpenMapperLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OpenMapperLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		370D138C1F080B200022ADBF /* OpenMapperLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = OpenMapperLib.framework; path = ../../../../../../../../Developer/OpenMapper/OpenMapper/lib/OpenMapperLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 		298CECEE1EEDD78B00C5542F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2972D0B01F0C2ED1000AC882 /* ORBvoc.txt */,
+				2972D0B11F0C2ED1000AC882 /* iphone.yaml */,
 				298CECEF1EEDD7A900C5542F /* Assets.xcassets */,
 				298CECF01EEDD7A900C5542F /* Base.lproj */,
 				298CECF51EEDD7A900C5542F /* Info.plist */,
@@ -179,7 +185,9 @@
 			files = (
 				298CECF81EEDD7A900C5542F /* Main.storyboard in Resources */,
 				298CECF61EEDD7A900C5542F /* Assets.xcassets in Resources */,
+				2972D0B31F0C2ED1000AC882 /* iphone.yaml in Resources */,
 				298CECF71EEDD7A900C5542F /* LaunchScreen.storyboard in Resources */,
+				2972D0B21F0C2ED1000AC882 /* ORBvoc.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
