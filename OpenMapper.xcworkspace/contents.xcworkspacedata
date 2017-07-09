@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../OpenMapper/fw_build/OpenMapper.xcodeproj">
+      location = "group:../OpenMapper/fw_build/OMKit.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:OpenMapper.xcodeproj">

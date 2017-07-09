@@ -15,8 +15,8 @@
 		298CECF61EEDD7A900C5542F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298CECEF1EEDD7A900C5542F /* Assets.xcassets */; };
 		298CECF71EEDD7A900C5542F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 298CECF11EEDD7A900C5542F /* LaunchScreen.storyboard */; };
 		298CECF81EEDD7A900C5542F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 298CECF31EEDD7A900C5542F /* Main.storyboard */; };
-		370D138D1F080B200022ADBF /* OpenMapperLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370D138C1F080B200022ADBF /* OpenMapperLib.framework */; };
-		370D138E1F080B200022ADBF /* OpenMapperLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 370D138C1F080B200022ADBF /* OpenMapperLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		299949971F122B1400A4CB96 /* OMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299949961F122B1400A4CB96 /* OMKit.framework */; };
+		299949981F122B1400A4CB96 /* OMKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 299949961F122B1400A4CB96 /* OMKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				370D138E1F080B200022ADBF /* OpenMapperLib.framework in Embed Frameworks */,
+				299949981F122B1400A4CB96 /* OMKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,7 +46,7 @@
 		298CECF21EEDD7A900C5542F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		298CECF41EEDD7A900C5542F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		298CECF51EEDD7A900C5542F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
-		370D138C1F080B200022ADBF /* OpenMapperLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = OpenMapperLib.framework; path = ../../../../../../../../Developer/OpenMapper/OpenMapper/lib/OpenMapperLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		299949961F122B1400A4CB96 /* OMKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = OMKit.framework; path = ../../../../../../../../Developer/OpenMapper/OpenMapper/lib/OMKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				370D138D1F080B200022ADBF /* OpenMapperLib.framework in Frameworks */,
+				299949971F122B1400A4CB96 /* OMKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +64,7 @@
 		290520DD1EEDC57E00A4320F = {
 			isa = PBXGroup;
 			children = (
-				370D138C1F080B200022ADBF /* OpenMapperLib.framework */,
+				299949961F122B1400A4CB96 /* OMKit.framework */,
 				2916D5051EFFC75600E05399 /* test.h */,
 				2916D5061EFFC75600E05399 /* test.m */,
 				2916D4FA1EFFC49700E05399 /* Frameworks */,
