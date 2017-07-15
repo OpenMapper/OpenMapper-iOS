@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2916D5071EFFC75600E05399 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 2916D5061EFFC75600E05399 /* test.m */; };
 		2972D0B21F0C2ED1000AC882 /* ORBvoc.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2972D0B01F0C2ED1000AC882 /* ORBvoc.txt */; };
 		2972D0B31F0C2ED1000AC882 /* iphone.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 2972D0B11F0C2ED1000AC882 /* iphone.yaml */; };
 		298CECEC1EEDD66700C5542F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298CECEA1EEDD66700C5542F /* AppDelegate.swift */; };
@@ -15,8 +14,8 @@
 		298CECF61EEDD7A900C5542F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298CECEF1EEDD7A900C5542F /* Assets.xcassets */; };
 		298CECF71EEDD7A900C5542F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 298CECF11EEDD7A900C5542F /* LaunchScreen.storyboard */; };
 		298CECF81EEDD7A900C5542F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 298CECF31EEDD7A900C5542F /* Main.storyboard */; };
-		299949971F122B1400A4CB96 /* OMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299949961F122B1400A4CB96 /* OMKit.framework */; };
-		299949981F122B1400A4CB96 /* OMKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 299949961F122B1400A4CB96 /* OMKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		29B04E671F1A20EF009E05D0 /* OMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B04E661F1A20EF009E05D0 /* OMKit.framework */; };
+		29B04E681F1A20FD009E05D0 /* OMKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29B04E661F1A20EF009E05D0 /* OMKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				299949981F122B1400A4CB96 /* OMKit.framework in Embed Frameworks */,
+				29B04E681F1A20FD009E05D0 /* OMKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,8 +35,6 @@
 /* Begin PBXFileReference section */
 		290520E61EEDC57E00A4320F /* OpenMapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenMapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2916D5041EFFC75600E05399 /* OpenMapper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenMapper-Bridging-Header.h"; sourceTree = "<group>"; };
-		2916D5051EFFC75600E05399 /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = test.h; path = Resources/test.h; sourceTree = "<group>"; };
-		2916D5061EFFC75600E05399 /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = test.m; path = Resources/test.m; sourceTree = "<group>"; };
 		2972D0B01F0C2ED1000AC882 /* ORBvoc.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ORBvoc.txt; path = ../OpenMapper/thirdparty/slam_engine/ORB_SLAM2/Vocabulary/ORBvoc.txt; sourceTree = "<group>"; };
 		2972D0B11F0C2ED1000AC882 /* iphone.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = iphone.yaml; path = ../OpenMapper/thirdparty/slam_engine/ORB_SLAM2/Vocabulary/iphone.yaml; sourceTree = "<group>"; };
 		298CECEA1EEDD66700C5542F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Source/AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +43,7 @@
 		298CECF21EEDD7A900C5542F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		298CECF41EEDD7A900C5542F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		298CECF51EEDD7A900C5542F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
-		299949961F122B1400A4CB96 /* OMKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = OMKit.framework; path = ../../../../../../../../Developer/OpenMapper/OpenMapper/lib/OMKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B04E661F1A20EF009E05D0 /* OMKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OMKit.framework; path = ../OpenMapper/lib/OMKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				299949971F122B1400A4CB96 /* OMKit.framework in Frameworks */,
+				29B04E671F1A20EF009E05D0 /* OMKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,9 +61,6 @@
 		290520DD1EEDC57E00A4320F = {
 			isa = PBXGroup;
 			children = (
-				299949961F122B1400A4CB96 /* OMKit.framework */,
-				2916D5051EFFC75600E05399 /* test.h */,
-				2916D5061EFFC75600E05399 /* test.m */,
 				2916D4FA1EFFC49700E05399 /* Frameworks */,
 				298CECEE1EEDD78B00C5542F /* Resources */,
 				298CECE91EEDD65B00C5542F /* Source */,
@@ -86,6 +80,7 @@
 		2916D4FA1EFFC49700E05399 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				29B04E661F1A20EF009E05D0 /* OMKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -200,7 +195,6 @@
 			files = (
 				298CECEC1EEDD66700C5542F /* AppDelegate.swift in Sources */,
 				298CECED1EEDD66700C5542F /* ViewController.swift in Sources */,
-				2916D5071EFFC75600E05399 /* test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +329,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "OpenMapper-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = arm64;
 			};
 			name = Debug;
 		};
@@ -351,6 +346,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "OpenMapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};

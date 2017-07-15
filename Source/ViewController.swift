@@ -9,8 +9,9 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController{
+class ViewController: UIViewController {
   var previewView : UIView!
+  let openMapper = OpenMapper()
   
   //Camera Capture requiered properties
   var videoDataOutput: AVCaptureVideoDataOutput!
