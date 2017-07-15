@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import GLKit
 import AVFoundation
 
 class ViewController: UIViewController {
   var previewView : UIView!
+  var glView : GLKView!
   let openMapper = OpenMapper()
   
   //Camera Capture requiered properties
@@ -25,10 +27,20 @@ class ViewController: UIViewController {
     previewView = UIView(frame: CGRect(x: 0, y: 0,
                                        width: UIScreen.main.bounds.size.width/2,
                                        height: UIScreen.main.bounds.size.height/2))
+    
+    glView = GLKView(frame: CGRect(x: UIScreen.main.bounds.size.width/2, y: 0,
+                                       width: UIScreen.main.bounds.size.width/2,
+                                       height: UIScreen.main.bounds.size.height/2))
+    glView.backgroundColor? = .black
     previewView.contentMode = UIViewContentMode.scaleAspectFit
     view.addSubview(previewView)
+    glView.contentMode = UIViewContentMode.scaleAspectFit
+    glView.context = EAGLContext(api: .openGLES2)
+
+    view.addSubview(glView)
     
     self.setupAVCapture()
+    
   }
   
   override var shouldAutorotate: Bool {
@@ -94,7 +106,13 @@ extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate{
   func captureOutput(_ captureOutput: AVCaptureOutput!,
                      didOutputSampleBuffer sampleBuffer: CMSampleBuffer!,
                      from connection: AVCaptureConnection!) {
-    // use sampleBuffer, i.e. the camera image here to process frame
+    let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)
+    let cameraImage = CIImage(cvPixelBuffer: pixelBuffer!)
+    let ciContext = CIContext(options: nil)
+    let cgCameraImage =  ciContext.createCGImage(cameraImage, from: cameraImage.extent)
+    openMapper?.processUIImage(UIImage(cgImage: cgCameraImage!))
+    openMapper?.draw();
+    glView.display()
   }
   
   // clean up AVCapture
